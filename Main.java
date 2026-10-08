@@ -26,6 +26,9 @@ public class Main {
                     System.out.println("Méthode : " + request.method);
                     System.out.println("Chemin  : " + request.path);
 
+                    System.out.println(request.headers);
+
+
                     HttpResponse.send(socket, 200, "{\"message\": \"hello\"}");
                 } catch (Exception e) {
                     e.printStackTrace();
